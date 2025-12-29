@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lohith Channa - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1200px;
+            padding: 0 1rem;
+            width: 100%;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 30px #3b82f6;
+        }
+        .skill-bubble {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .social-link {
+            transition: transform 0.2s;
+        }
+        .social-link:hover {
+            transform: scale(1.1);
+        }
+        .section-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-white flex flex-col items-center justify-center min-h-screen p-4">
+
+    <!-- Main Content Container -->
+    <div class="container mx-auto p-4 md:p-8">
+
+        <!-- Header/Navbar -->
+        <header class="flex justify-between items-center py-4 mb-16">
+            <div class="text-3xl font-bold text-blue-500">
+                LC
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#projects" class="text-gray-400 hover:text-white">Projects</a>
+                <a href="#skills" class="text-gray-400 hover:text-white">Skills</a>
+                <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white text-glow">
+                Hello,
+            </h1>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">
+                I'm Lohith Channa
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-400 mb-12">
+                Artificial Intelligence Graduate Student & AI Engineer
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">Download Resume</a>
+                <a href="#projects" class="bg-transparent border border-gray-400 hover:border-white text-gray-400 hover:text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">View Projects</a>
+            </div>
+
+            <!-- Skills Section -->
+            <section id="skills" class="mb-16">
+                <h3 class="section-heading">Skills</h3>
+                <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
+                    <!-- Skills with original logos -->
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-4 h-4">Python</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-4 h-4">Java</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://www.tensorflow.org/images/tf_logo_social.png" alt="TensorFlow" class="w-4 h-4">TensorFlow</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">Scikit-Learn</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/1200px-Keras_logo.svg.png" alt="Keras" class="w-4 h-4">Keras</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">XGBoost</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">Pandas</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://numpy.org/images/logo.svg" alt="NumPy" class="w-4 h-4">NumPy</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">Seaborn</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://matplotlib.org/_static/logo2.svg" alt="Matplotlib" class="w-4 h-4">Matplotlib</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">SQL</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">NLP</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">Hadoop</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://spark.apache.org/images/spark-logo.png" alt="Spark" class="w-4 h-4">Spark</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git" class="w-4 h-4">Git</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png" alt="Jupyter Notebooks" class="w-4 h-4">Jupyter Notebooks</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">PyCharm</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">Flask</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">Arduino-Uno</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/1200px-OpenAI_Logo.svg.png" alt="OpenAI GPT" class="w-4 h-4">OpenAI GPT</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full">Pega</span>
+                    <span class="skill-bubble text-sm md:text-base font-medium px-4 py-2 rounded-full"><img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="Docker" class="w-4 h-4">Docker</span>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="mb-16">
+                <h3 class="section-heading">Projects</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- Spiking Neural Networks Project -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">Spiking Neural Networks Implementation with Brian2</h4>
+                        <p class="text-gray-300">Developed a computational neuroscience project using Python and Brian2 to implement complex neural network models, including single neuron dynamics and synaptic plasticity.</p>
+                    </div>
+                    <!-- Credit Card Fraud Detection -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">Credit Card Fraud Detection</h4>
+                        <p class="text-gray-300">Engineered a deep learning model with TensorFlow and Keras to identify fraudulent transactions with high accuracy in an imbalanced dataset.</p>
+                    </div>
+                    <!-- Flight Delay Prediction -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">Flight Delay Prediction</h4>
+                        <p class="text-gray-300">Created a predictive model using Python, Pandas, and Scikit-Learn to forecast airline delays and improve resource management.</p>
+                    </div>
+                     <!-- Healthcare Data Analysis -->
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">Healthcare Data Analysis</h4>
+                        <p class="text-gray-300">Analyzed healthcare data with Python libraries like Pandas and Matplotlib to predict disease outcomes and optimize treatment recommendations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Links -->
+            <footer id="contact" class="flex justify-center items-center space-x-6 pt-16">
+                <a href="https://www.linkedin.com/in/yourprofile" class="social-link" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
+                </a>
+                <a href="https://github.com/yourprofile" class="social-link" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub" class="w-6 h-6">
+                </a>
+                <a href="mailto:lohithchenna@gmail.com" class="social-link">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/gmail.svg" alt="Email" class="w-6 h-6">
+                </a>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
+
